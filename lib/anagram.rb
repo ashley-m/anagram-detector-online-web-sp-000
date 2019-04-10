@@ -14,6 +14,6 @@ class Anagram
     #binding.pry
     m << letarray.select {|y| y.sort==@letters}
     m
-    binding.pry
+    #binding.pry
   end
 end
