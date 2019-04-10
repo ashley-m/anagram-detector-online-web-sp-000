@@ -13,7 +13,7 @@ class Anagram
     text.each {|x| letarray << x.split("")}
     #binding.pry
     m << letarray.select {|y| y.sort==@letters}
-    m
+    m.flatten
     #binding.pry
   end
 end
