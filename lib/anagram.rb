@@ -17,6 +17,6 @@ class Anagram
     m.flatten!(1) if m.any? {|z| z.is_a?(Array)}
     m.each {|f| match << f.join if f.is_a?(Array)}
     binding.pry
-    m
+    match
   end
 end
