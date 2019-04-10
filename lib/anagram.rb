@@ -14,6 +14,7 @@ class Anagram
     #binding.pry
     m << letarray.select {|y| y.sort==@letters}
     m.flatten if !m.any? {|z| z.is_a?(Array)}
+    m.each! {|f| f.join}
     #binding.pry
   end
 end
